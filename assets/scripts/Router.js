@@ -43,7 +43,7 @@ export class Router {
    *                              'popstate' event instead of a normal card click
    */
   navigate(page, statePopped) {
-    let urlTag = page == 'home' ? '/' : '/#'+page;
+    let urlTag = page == 'home' ? '/Lab7_Starter' : '/Lab7_Starter/#'+page;
     if(statePopped){
       history.pushState({'page': page}, "", urlTag);
     }
