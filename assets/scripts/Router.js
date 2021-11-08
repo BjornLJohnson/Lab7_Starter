@@ -44,7 +44,6 @@ export class Router {
    */
   navigate(page, statePopped) {
     let urlTag = page == 'home' ? '/' : '/#'+page;
-    console.log("url tag is: " + urlTag)
     if(statePopped){
       history.pushState({'page': page}, "", urlTag);
     }
